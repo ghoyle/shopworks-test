@@ -1,0 +1,10 @@
+{
+  "name": "q1-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/q1-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["q1"],
+  "// targets": "to see all targets run: nx show project q1-e2e --web",
+  "targets": {}
+}

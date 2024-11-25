@@ -1,9 +1,10 @@
-import NxWelcome from './nx-welcome';
+import FormController from './components/form/formController/formController';
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="q2" />
+      <h1>Q2</h1>
+      <FormController />
     </div>
   );
 }

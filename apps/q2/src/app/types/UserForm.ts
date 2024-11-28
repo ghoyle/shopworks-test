@@ -11,7 +11,9 @@ export interface IFormField extends IFormFieldBasic {
   label: string;
   type: TFormFieldType;
   options?: string[];
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (
+    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLSelectElement>
+  ) => void;
 }
 export interface IFormSection {
   title: string;

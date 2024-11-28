@@ -25,7 +25,10 @@ const useFormControls = (form: IUserForm) => {
     setFieldValues(newFieldValues);
   };
   const printFieldValues = () => {
-    console.log({ ...fieldValues });
+    const reducedFieldValues = fieldValues.reduce((acc, field) => {
+      return { ...acc, [field.name]: field.value };
+    }, {});
+    console.log({ ...reducedFieldValues });
   };
   return { setFieldValue, fieldValues, printFieldValues };
 };

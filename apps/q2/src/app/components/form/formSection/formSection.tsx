@@ -8,7 +8,7 @@ interface FormSectionProps {
 function FormSection(props: FormSectionProps) {
   const { section } = props;
   return (
-    <fieldset>
+    <fieldset data-testid={'form-section'}>
       <h3>{section.title}</h3>
       {section.fields.map((field) => (
         <FormFieldController field={field} key={field.name} />
